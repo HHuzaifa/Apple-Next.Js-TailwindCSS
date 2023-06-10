@@ -1,6 +1,7 @@
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
+import ProductBar from "@/components/ProductBar";
 
 export const metadata = {
   title: "Apple",
@@ -14,9 +15,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Header />
-      <body>{children}</body>
-      <Footer />
+      <body>
+        <Header />
+        <ProductBar />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
