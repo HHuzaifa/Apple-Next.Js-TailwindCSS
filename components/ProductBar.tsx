@@ -9,7 +9,7 @@ export default function ProductBar() {
 
 
 
-            <ul className="grid grid-cols-3 gap-8">
+            <ul className="grid grid-cols-2 gap-x-5 gap-y-5">
                 <li className="relative w-16 h-16">
                     <Image src={"/product-bar-images/pbar1.png"} fill={true} alt="product category image" />
                 </li>

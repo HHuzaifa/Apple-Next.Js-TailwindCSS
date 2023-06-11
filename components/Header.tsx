@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <header>
       {/* Mobile Nav Menu */}
-      <div className="lg:hidden z-40 absolute">
+      <div className="lg:hidden z-40  sticky inset-0">
         <Wrapper>
           <div className="flex justify-between items-center sticky inset-0 h-16">
             <div className="flex justify-between items-center">
@@ -77,7 +77,7 @@ export default function Header() {
 
       {/* ------------------------------------------------ */}
 
-      {/* Desktop LG Nav Menu */}
+      {/* Desktop Nav Menu */}
 
       <div className="hidden lg:sticky lg:inset-0 lg:flex justify-center items-center gap-x-8 h-20">
 
