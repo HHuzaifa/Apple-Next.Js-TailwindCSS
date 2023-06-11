@@ -23,7 +23,7 @@ export default function Header() {
   return (
     <header>
       {/* Mobile Nav Menu */}
-      <div className="lg:hidden z-40  sticky inset-0">
+      <div className="lg:hidden sticky z-50">
         <Wrapper>
           <div className="flex justify-between items-center sticky inset-0 h-16">
             <div className="flex justify-between items-center">
@@ -52,23 +52,23 @@ export default function Header() {
         </Wrapper>
 
         {open && (
-          <ul className="mobile-nav flex flex-col items-center shadow-lg gap-y-5 rounded py-7 bg-gray-300">
-            <li className="text-base font-normal hover:font-bold">Store</li>
-            <li className="text-base font-normal hover:font-bold">Mac</li>
-            <li className="text-base font-normal hover:font-bold">iPad</li>
-            <li className="text-base font-normal hover:font-bold">iPhone</li>
-            <li className="text-base font-normal hover:font-bold">Watch</li>
-            <li className="text-base font-normal hover:font-bold">AirPods</li>
-            <li className="text-base font-normal hover:font-bold">
+          <ul className="absolute transition-opacity duration-300 w-full mobile-nav  flex flex-col items-center shadow-lg gap-y-5 rounded py-7 bg-black bg-opacity-80 backdrop-blur">
+            <li className="text-base text-white font-normal hover:font-bold">Store</li>
+            <li className="text-base text-white font-normal hover:font-bold">Mac</li>
+            <li className="text-base text-white font-normal hover:font-bold">iPad</li>
+            <li className="text-base text-white font-normal hover:font-bold">iPhone</li>
+            <li className="text-base text-white font-normal hover:font-bold">Watch</li>
+            <li className="text-base text-white font-normal hover:font-bold">AirPods</li>
+            <li className="text-base text-white font-normal hover:font-bold">
               TV & Home
             </li>
-            <li className="text-base font-normal hover:font-bold">
+            <li className="text-base text-white font-normal hover:font-bold">
               Entertainment
             </li>
-            <li className="text-base font-normal hover:font-bold">
+            <li className="text-base text-white font-normal hover:font-bold">
               Accessories
             </li>
-            <li className="text-base font-normal hover:font-bold">Support</li>
+            <li className="text-base text-white font-normal hover:font-bold">Support</li>
           </ul>
         )}
       </div>
